@@ -1,6 +1,6 @@
 fun main(){
     strings(arrayOf("Ashly", "Steve", "Titus", "Monica"))
-    grammar()
+    grammar(arrayOf("harare", "mumbai", "dodoma", "jakarta"))
     integers()
     var names = arrayOf("Noellah","Austine", "Saul" )
     println(names.contentToString())
@@ -8,10 +8,9 @@ fun main(){
 fun strings(names: Array<String>){
     println(names.contentToString())
 }
-fun grammar(){
-    var cities = arrayOf("harare", "mumbai", "dodoma", "jakarta")
-    for (city in cities){
-        println(city.capitalize())
+fun grammar(names:Array<String>){
+    names.forEach{names ->
+        println(names.capitalize())
     }
 }
 fun integers(){
