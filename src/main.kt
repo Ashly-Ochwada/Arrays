@@ -2,8 +2,8 @@ fun main(){
     strings(arrayOf("Ashly", "Steve", "Titus", "Monica"))
     grammar(arrayOf("harare", "mumbai", "dodoma", "jakarta"))
     integers()
-    var names = arrayOf("Noellah","Austine", "Saul" )
-    println(names.contentToString())
+    var family =name("Noellah","Austine", "Saul" )
+    println(family.contentToString())
 }
 fun strings(names: Array<String>){
     println(names.contentToString())
@@ -21,7 +21,8 @@ fun integers(){
     var sortedNumbers = numbers.sortedArray()
     println(sortedNumbers.contentToString())
 }
-fun name(names: Array<String>):Array<String>{
+fun name(name1:String, name2:String, name3:String):Array<String>{
+   var names = arrayOf(name1, name2, name3)
     return names
 }
 
