@@ -1,11 +1,12 @@
 fun main(){
-    strings(arrayOf("Ashly", "Steve", "Titus", "Monica"))
+    strings("Ashly", "Steve", "Titus", "Monica"))
     grammar(arrayOf("harare", "mumbai", "dodoma", "jakarta"))
     integers()
     var family =name("Noellah","Austine", "Saul" )
     println(family.contentToString())
 }
-fun strings(names: Array<String>){
+fun strings(names1:String, names2:String, names3:String, names4:String){
+    var names = arrayOf(names1,names2,names3,names4)
     println(names.contentToString())
 }
 fun grammar(names:Array<String>){
